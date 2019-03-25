@@ -4,6 +4,10 @@ sass = require('gulp-sass');
 sass.compiler = require('node-sass');
 // 默认执行default
 gulp.task('default',['allFile','sass','server','watch']);
+
+gulp.task('del',function(){
+    del(['dist']);
+})
 // 输出app文件夹下面除了sass文件夹的所有文件到dist文件夹内
 gulp.task('allFile',function(){
     gulp.src(['app/**/*','!app/sass/**/*'])
@@ -19,7 +23,7 @@ gulp.task('sass',function(){
 // 监听app下面的文件是否修改
 gulp.task('watch',function(){
     gulp.watch(['app/**/*','!app/sass/**/*'],['allFile']);
-    gulp.watch('app/sass/**/*.scss',['sass']);
+    gulp.watch('app/sass/**/*.scss',['sass','allFile']);
 })
 // 生成服务器
 gulp.task('server',function(){

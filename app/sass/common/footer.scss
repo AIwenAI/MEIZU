@@ -1,0 +1,217 @@
+$bg: #fff;
+.footer{
+	width: 1240px;
+	margin: 0 auto;
+	height: 246px;
+	.service{
+		height: 157px;
+		border-bottom: 1px solid #eee;
+		.express{
+			display: inline-block;
+			width: 150px;
+			padding-top: 48px;
+			img{
+				width: 50px;
+				height: 39px;
+				margin: 0 auto;
+			}
+			p{
+				text-align: center;
+				font-size: 12px;
+				color: #999;
+				line-height: 30px;
+			}
+		}
+		.contact{
+			width: 156px;
+			height: 103px;
+			float: right;
+			padding-top: 38px;
+			span{
+				display: block;
+				float: right;
+				font-size: 12px;
+				color: #999;
+				line-height: 14px;
+			}
+			p{
+				font-size: 22px;
+				color: #02c3f5;
+				float: right;
+				line-height: 40px;
+			}
+			a{
+				display: block;
+				width: 88px;
+				height: 30px;
+				border-radius: 15px;
+				background-color: #0bbbef;
+				font-size: 14px;
+				color: $bg;
+				line-height: 30px;
+				text-align: center;
+				float: right;
+			}
+		}
+	}
+	.link{
+		padding: 29px 0 13px;
+		height: 18px;
+		li{
+			float: left;
+			height: 18px;
+			padding: 0 15px;
+			border-right: 1px solid #999;
+			
+			a{
+				display: block;
+				font-size: 12px;
+				line-height: 18px;
+				color: #999;
+				&:hover{
+					color: #0bbbef;
+				}
+				i{
+					display: block;
+					float: left;
+					width: 18px;
+					height: 18px;
+					background: url(../images/china.png);
+					background-size: 18px;
+					margin-right: 5px;
+				}
+			}
+		}
+		li:first-child{
+			padding-left: 0;
+		}
+		li:last-child{
+			border-right: none;
+			position: relative;
+			a{
+				&:hover{
+					color: #333;
+				}
+			}
+			.country{
+				background-color: $bg;
+				width: 115px;
+				position: absolute;
+				left: -2px;
+				top: -275px;
+				display: none;
+				padding-top: 10px; 
+				li{
+					float: none;
+					border-right: none;
+					margin-bottom: 20px;
+					padding: 0 15px;
+					a{
+						line-height: 18px;
+						color: #333;
+						i{
+							width: 22px;
+							height: 22px;
+							background-size: 22px;
+						}
+						&:hover{
+							color: #999;
+						}
+					}
+				}
+			}
+			
+			&:hover .country{
+				display: block;
+			}
+		}
+
+	}
+	.bottom-bg{
+		height: 18px;
+		background: url(../images/footer.jpg) no-repeat left center;
+		a{
+			display: inline-block;
+			width: 20px;
+			height: 18px;
+			margin-left: 3px;
+		}
+		a:first-child{
+			margin-left: 892px;
+			background: url(../images/bottom11.png) no-repeat center;
+			&:hover{
+				background: url(../images/bottom1.png) no-repeat center;
+			}
+		}
+		
+		a:nth-child(2){
+			background: url(../images/bottom22.png) no-repeat center;
+			&:hover{
+				background: url(../images/bottom2.png) no-repeat center;
+			}
+		}
+		a:nth-child(3){
+			background: url(../images/bottom33.png) no-repeat center;
+			&:hover{
+				background: url(../images/bottom3.png) no-repeat center;
+			}
+		}
+		a:nth-child(4){
+			background: url(../images/link.png) no-repeat center;
+			background-size: 20px 18px;
+			margin: 0 12px 0 100px;
+			position: relative;
+			img{
+				position: absolute;
+				top: -190px;
+				left: -10px;
+				width: 180px;
+				display: none;
+			}
+			&:hover{
+				background: url(../images/link1.png) no-repeat center;
+				background-size: 20px 18px;
+			}&:hover img{
+				display: block;
+			}
+		}
+		a:nth-child(5){
+			position: relative;
+			background: url(../images/weixin.png) no-repeat center;
+			background-size: 20px 18px;
+			margin: 0 12px;
+			img{
+				position: absolute;
+				width: 180px;
+				left: -60px;
+				top: -190px;
+				display: none;
+			}
+			&:hover{
+				background: url(../images/weixin1.png) no-repeat center;
+				background-size: 20px 18px;
+			}
+			&:hover img{
+				display: block;
+			}
+		}
+		a:nth-child(6){
+			background: url(../images/zoom.png) no-repeat center;
+			background-size: 20px 18px;
+			margin: 0 12px;
+			&:hover{
+				background: url(../images/zoom1.png) no-repeat center;
+				background-size: 20px 18px;
+			}
+		}
+		a:nth-child(7){
+			background: url(../images/weibo.png) no-repeat center;
+			background-size: 20px 18px;
+			margin-left: 12px;
+			&:hover{
+				background: url(../images/weibo1.png) no-repeat center;
+				background-size: 20px 18px;
+			}
+		}
+	}
+}
