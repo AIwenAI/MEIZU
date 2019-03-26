@@ -1,46 +1,48 @@
 .header{
     width: 100%;
-    position: relative;
+    position: absolute;
+    top: 0;
     height: 80px;
-    z-index: 1;
+    z-index: 33;
+    // background: #fff;
     .app{
         position: absolute;
-        top: 82px;
+        top: 81px;
         width: 100%;
-        background: #fff;
-        .app-box{
-            display: none;
-            position: relative;
+        background: #fff;   
+         .phone-goods{
             width: 1240px;
+            height: 0px;
             margin: 0 auto;
-            padding: 10px 0;
-            img{
-                width: 100%;
+            display: flex;
+            justify-content: space-between;
+            // display: none;
+            .app-box{
+                position: relative;
+                top: 0;
+                width: 1240px;
+                margin: 0 auto;
+                padding: 10px 0;
+                img{
+                    width: 100%;
+                }
+                p{
+                    position: absolute;
+                    width: 122px;
+                    height: 30px;
+                    background: url(../../images/app-bg.png) no-repeat;
+                    background-size: 122px 30px;
+                }
+                p:first-of-type{
+                    top: 215px;
+                    left: 370px;
+                }
+                p:last-of-type{
+                    top: 215px;
+                    left: 995px;
+                }
             }
-            p{
-                position: absolute;
-                width: 122px;
-                height: 30px;
-                background: url(../../images/app-bg.png) no-repeat;
-                background-size: 122px 30px;
-            }
-            p:first-of-type{
-                top: 215px;
-                left: 370px;
-            }
-            p:last-of-type{
-                top: 215px;
-                left: 995px;
-            }
-        }
-        .phone-goods,.phonics,.parts,.life{
-            width: 1240px;
-            height: 190px;
-            margin: 0 auto;
-            display: none;
             li{
-                float: left;
-                padding: 0 16px;
                 a{
                     img{
                         width: 120px;
@@ -77,22 +79,15 @@
             margin-top: 27px; 
             font-size: 22px;
             line-height: 24px;
-            color: #fff!important;
+            color: #fff;
         }
-        i{
-            position: absolute;
-            top: 30px;
-            right: 85px;
-            color: #8c8c8c!important;
-            font-size: 20px!important;
-            font-weight: 700;
-        }
+        
         .nav{
-            height: 80px;
             float: left;
             margin-left: 200px;
             li{
                 float: left;
+                height: 80px;
                 a{
                     float: left;
                     line-height: 80px;
@@ -100,39 +95,109 @@
                     font-size: 14px;
                     color: #fff;
                 }
-                a:hover{
-                    color: #00bfff;
-                }
+                // a:hover{
+                //     color: #00bfff;
+                // }
             }
         }
-        .search{
-            width: 154px;
-            height: 28px;
-            border-radius: 15px;
-            float: left;
+        form{
+            width: 170px;
             margin: 25px 0 0 5px;
-            padding-left: 16px;
-            font-size: 12px;
             border: 1px solid #ccc;
+            float: left;
+            border-radius: 15px;
+            position: relative;
+            border-radius: 15px;
+            background: #fff;
+            .search-box{
+                position: absolute;
+                width: 100%;
+                height: 160px;
+                li{
+                    color: #999;
+                    padding-left: 16px;
+                    font-size: 12px;
+                    line-height: 30px;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    width: 154px;
+                    text-overflow: ellipsis;
+                    cursor: pointer;
+                    &:hover{
+                        background: #ccc;
+                        color: #00bfff;
+                    }
+                }
+            }
+            .search{
+                color: #999;
+                padding-left: 16px;
+                font-size: 12px;
+                line-height: 30px;
+                background: none;
+            }
+            a{
+                position: absolute;
+                top: 5px;
+                right: 10px;
+                color: #8c8c8c!important;
+                font-size: 20px!important;
+                font-weight: 700;
+            }
+            
         }
-        .my{
-            margin-left: 10px;
-            background: url(../../images/my1.png) no-repeat;
-            background-size: 29px;
-        }
+        
         .my,.shop-car{
             display: inline-block;
-            width: 29px;
-            height: 29px;
-            margin-top:26px;
+            width: 30px;
+            height: 30px;
+            margin-top: 26px;
         }
-        .shop-car{
+        .my{
+            margin-left: 8px;
+            border-radius: 50%;
+            background: url(../../images/my1.png) no-repeat;
+            background-size: 30px;
             position: relative;
+            .my-box{
+                display: none;
+                height: 120px;
+                position: absolute;
+                top: 30px;
+                left: -33px;
+                dt{
+                    display: block;
+                    width: 100px;
+                    background: #fff;
+                    margin: 0 auto;
+                    height: 35px;
+                    text-align: center;
+                    span{
+                        font-size: 12px;
+                        line-height: 35px;
+                        color: #999;
+                        &:hover{
+                            color: #00bfff;
+                        }
+                    }
+                }
+                dt:first-child{
+                    margin-top: 6px;
+                }
+            }
+            &:hover .my-box{
+                display: block;
+            }
+            
+        }
+        
+        .shop-car{
             background: url(../../images/shop-car1.png) no-repeat;
-            background-size: 29px;
+            background-size: 30px;
             .count{
                 position: absolute;
                 right: -1px;
+                top: 26px;
                 display: block;
                 width: 15px;
                 height: 15px;
