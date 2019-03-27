@@ -55,7 +55,7 @@ body{
     .content{
         .gouwu{
             position: relative;
-            margin:10px;
+           margin-top: 10px;
             min-height: 360px;
             background: #fff; 
             .gwc{
@@ -73,23 +73,21 @@ body{
              }
             .aa{
                 float: left;
-              span{
-                  display: block;
-                  font-size: 18px;
-                  margin-bottom: 15px;
-              }
+           
               p{
                   display: block;
-                  font-size: 12px;
-                  margin-bottom: 20px;
+                  font-size: 18px;
+                  margin:30px 0 20px 0;
               }
               a{
                   display: block;
                   width: 130px;
                   height: 36px;
-                  color: #fff;
+                  color: #00c3f5;
+                  margin-top: 20px;
                   line-height: 36px;
-                  background: #00c3f5;
+                  border:1px solid #00c3f5;
+                  border-radius: 3px;
                   text-align: center;
                  
               }
