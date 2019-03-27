@@ -34,6 +34,7 @@
                 </div>
                 <input name="phone" class="ipt_phone "  maxlength="11" placeholder="手机号码" autocomplete="off">
             </div>
+            <a class="ver"></a>
             <div class="ser_box">
                 <label class="pointer" for="acceptFlyme" tabindex="0">点击立即注册，即表示您同意并愿意遵守</label>
                 <a href="/serviceAgreement" target="_blank" class="linkABlue">Flyme服务协议</a>
@@ -41,12 +42,12 @@
                 <a href="http://www.meizu.com/legal.html" target="_blank" class="linkABlue">法律声明</a>
             </div>
             <div class="btn_box">
-                <a class="reg_btn" href="http://localhost:7777/1814/%E9%A1%B9%E7%9B%AE%E5%91%A8%E6%96%87%E4%BB%B6/MEIZU/app/getVCode.html">
+                <a class="reg_btn" href="getVCode.html">
                     立即注册
                 </a>
             </div>
             <div class="reg_now">
-                    <a class="toLogin" href="http://localhost:7777/1814/%E9%A1%B9%E7%9B%AE%E5%91%A8%E6%96%87%E4%BB%B6/MEIZU/app/log_index.html" >登录</a>
+                    <a class="toLogin" href="log_index.html" >登录</a>
             </div>
         </form>
     </div>
@@ -84,6 +85,7 @@
         </div>
     </div>
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"> </script>
+    <script src="js/reg_index.js"></script>
     <script>
        $('.ipt_phone').on('focus',function(){
            $('.phone_num').css({
@@ -96,6 +98,9 @@
            })
        })
 
+    </script>
+    <script>
+      phone.init();
     </script>
 </body>
 
