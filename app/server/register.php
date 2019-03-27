@@ -1,14 +1,11 @@
 <?php
     // 获取每一个字段的值
-    // $name2 = $_GET['username2']; // 就是获取url中的键值对
-    // echo $name2;
-    
     header('Access-Control-Allow-Origin:*');//允许所有来源访问
-
     header('Access-Control-Allow-Method:POST,GET');//允许访问的方式
+
     $password = $_POST['password'];
     $phone = $_POST['phone'];
-    $sql = "INSERT INTO USER  (`PASSWORD`, `phone`) VALUE ('$password','$phone')";
+    $sql = "INSERT INTO USER  (`password`, `phone`) VALUE ('$password','$phone')";
     // 连接数据库
     $coon = new Mysqli('localhost', 'root', '', 'meizu',3306);
     // 设置字符集

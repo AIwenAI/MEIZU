@@ -6,7 +6,7 @@ header('Access-Control-Allow-Method:POST,GET');//允许访问的方式
         public $ip = 'localhost';
         public $root = 'root';
         public $password = '';
-        public $db = 'meizhu';
+        public $db = 'meizu';
         public $port = '3306';
         public function fetch($sql, $type="bool") {
             $coon = new Mysqli($this->ip, $this->root, $this->password, $this->db, $this->port);
