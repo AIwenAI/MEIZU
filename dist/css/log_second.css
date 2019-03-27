@@ -185,14 +185,13 @@ h1, h2, h3, h4, h5, h6 {
         border: 0px;
         outline: none;
         cursor: pointer; }
-    .logS_main .logS_box .ver {
+    .logS_main .logS_box .pas_ver {
       width: 298px;
       height: 24px;
       margin: 0 0 0 35px;
       font-size: 16px;
       line-height: 24px;
-      text-align: center;
-      background: pink; }
+      text-align: center; }
     .logS_main .logS_box .ipPass_box {
       width: 298px;
       height: 48px;
@@ -206,6 +205,13 @@ h1, h2, h3, h4, h5, h6 {
         border: 0px;
         outline: none;
         cursor: pointer; }
+    .logS_main .logS_box .vers {
+      width: 298px;
+      height: 24px;
+      margin: 0 0 0 35px;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center; }
     .logS_main .logS_box .log_btn {
       width: 298px;
       height: 46px;
