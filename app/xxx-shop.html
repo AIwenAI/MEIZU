@@ -8,7 +8,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/xxx-shop.css">
-    <link rel="stylesheet" href="css/font_bdhjxcewwkm/iconfont.css">
+    <link rel="stylesheet" href="css/font_css/iconfont.css">
     <link rel="stylesheet" href="css/city.css">
 </head>
 
@@ -57,11 +57,11 @@
                 </ul>
             </div>
             <dl>
-                <dt><i class="iconfont icon-favorite-line"></i></dt>
+                <dt><i class="iconfont icon-shoucang"></i></dt>
                 <dd>收藏</dd>
             </dl>
             <dl>
-                <dt><i class="iconfont icon-spread-line"></i></dt>
+                <dt><i class="iconfont icon-duibi"></i></dt>
                 <dd>对比</dd>
             </dl>
         </article>
@@ -74,9 +74,9 @@
                 <p class="p1 p-b"><em>加购价</em><i>另外再加15元，即可换购超值商品</i><a href="#" class="righta">立即加购></a></p>
             </div>
             <div class="phone-sf">
-                <p class="p2">支&nbsp&nbsp&nbsp&nbsp&nbsp持<span><i class="iconfont icon-confirm-line"></i>
-                        花呗分期</span><span><i class="iconfont icon-confirm-line"></i> 顺丰发货</span><span><i
-                            class="iconfont icon-confirm-line"></i> 七天无理由退货</span></p>
+                <p class="p2">支&nbsp&nbsp&nbsp&nbsp&nbsp持<span><i class="iconfont icon-dui"></i>
+                        花呗分期</span><span><i class="iconfont icon-dui"></i> 顺丰发货</span><span><i
+                            class="iconfont icon-dui"></i> 七天无理由退货</span></p>
                 <ul id="list1" style="width:620px;margin:40px auto 0 auto;">
                     <li id="summary-stock">
                         <div class="dt">配送服务</div>
@@ -196,19 +196,7 @@
 <script>
     glass.init();
     add.init();
-    //添加购物车
-    $(".addcar").click(function(){
-        $(".succes-add-car").fadeTo(300,1);
-        $("body").css({ "overflow": "hidden" });
-        localStorage.setItem('手机名', $("#model").children(".on").html());
-        localStorage.setItem('网络类型', $("#type").children(".on").html());
-        localStorage.setItem('颜色', $("#color").children(".on").html());
-        localStorage.setItem('内存', $("#memory").children(".on").html());
-    });
-    $(".bg-model-ok").click(function(){
-        $(".succes-add-car").hide();
-        $("body").css({ "overflow": "visible" });
-    });
+
 </script>
 <script>
 </script>

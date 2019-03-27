@@ -137,5 +137,17 @@ var add = (function() {
         }
     }
 })();
-
+    //添加购物车
+    $(".addcar").click(function(){
+        $(".succes-add-car").fadeTo(300,1);
+        $("body").css({ "overflow": "hidden" });
+        localStorage.setItem('手机名', $("#model").children(".on").html());
+        localStorage.setItem('网络类型', $("#type").children(".on").html());
+        localStorage.setItem('颜色', $("#color").children(".on").html());
+        localStorage.setItem('内存', $("#memory").children(".on").html());
+    });
+    $(".bg-model-ok").click(function(){
+        $(".succes-add-car").hide();
+        $("body").css({ "overflow": "visible" });
+    });
 
