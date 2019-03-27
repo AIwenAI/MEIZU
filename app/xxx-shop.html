@@ -13,8 +13,13 @@
 </head>
 
 <body>
+    <div id="head">
+        <div class="header">
+
+        </div>
+    </div>
     <!-- head -->
-    <header>
+    <div class="headerout">
         <section>
             <h1>魅族 16th Plus</h1>
             <ul>
@@ -38,7 +43,7 @@
                 </li>
             </ul>
         </section>
-    </header>
+    </div>
 
 
     <!--phone-shop-->
@@ -188,15 +193,22 @@
                 </a>
             </div>
     </div>
+    <div class="footer"></div>
 </body>
 <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
 <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
 <script src="js/xxx-shop.js"></script>
 <script src="js/city.js"></script>
+<script src="js/interactive.js"></script>
+<script src="js/search.js"></script>
 <script>
     glass.init();
     add.init();
-
+    $('.header').load('common/common.html header',function(){
+            inter.init();
+            search.init();
+    });
+    $('.footer').load('common/common.html footer');
 </script>
 <script>
 </script>
