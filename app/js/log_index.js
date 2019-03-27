@@ -6,6 +6,9 @@ var logIndex = (function(){
     return {
         init(){
          this.event();
+         this.phonere();
+         $('.log_header').load('reg_index.html #reg_logo');
+        $('.log_footer').load('reg_index.html #reg_footer');
 
         },
         event(){
@@ -42,5 +45,33 @@ var logIndex = (function(){
                 });
                
             },
+            phonere(){
+                $(".ipt_phone").on('blur',function () {
+                    $('.phone_num').css({
+                        borderColor: '#ddd',
+                    })
+                    var phonen = $.trim($('.ipt_phone').val());
+                    if ( phoneReg.test(phonen)) {
+                        $('.ver').css({
+                            color:'#387aff',
+                        })
+                        $('.ver').html('输入正确');
+                            }else{
+                                $('.ver').css({
+                                    color:'red',
+                                })
+                                $('.ver').html('格式错误，请输入正确的手机号');
+                            }
+                  })
+                  $(".ipt_phone").on('focus',function(){
+                    $('.phone_num').css({
+                        borderColor: '#387aff',
+                    })
+                    $('.ver').html('');
+                  })
+                  $('.changes').on('click', function () {
+                    $('#cha_phone').attr("class", "iconfont icon-shouji")
+                }) 
+            }
         }
 }())
