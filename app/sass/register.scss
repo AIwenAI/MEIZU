@@ -8,194 +8,202 @@
     .main_box{
         background: #fff;
         width: 368px;
-        height: 350px;
+        // height: 350px;
         position: absolute;
         right: 85px;
         top: 16%;
-        .tab_title{
-            width:298px ;
-            height:24px ;
-            margin: 40px 0 0  35px;
-            a{
-                font-size: 18px;
-                line-height: 24px;
-                text-align: center;
-                color: #3a7cff;
-                margin-left: 82px;
-            }
-
-        }
-        .phone_num{
-            width: 298px;
-            height: 48px ;
-            margin: 60px 0 0 35px;
-            border: 1px #ddd solid;
-            .ar_code{
-                height: 48px;
-                width: 60px;
-                border-right: 1px solid #DDD;
-                cursor: pointer;
-                float: left;
-                .ipt_cycode{
-                    height: 22px;
-                    width: 30px;
-                    margin:12px 5px 0  4px;
-                    font-size: 16px;
-                    float: left;
-                    color: #808080;
-                }
-                i{
-                    float: left;
+        #input_phone{
+            .tab_title{
+                width:298px ;
+                height:24px ;
+                margin: 40px 0 0  35px;
+                a{
                     font-size: 18px;
-                    margin-top: 12px;
-                    color: #808080;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #3a7cff;
+                    margin-left: 82px;
                 }
-
+    
             }
-            .ipt_phone{
-                // width: 233px;
-                height: 20px;
-                float: left;
-                border: #ddd;
-                margin-top: 15px;
+            .phone_num{
+                width: 298px;
+                height: 48px ;
+                margin: 60px 0 0 35px;
+                border: 1px #ddd solid;
+                .ar_code{
+                    height: 48px;
+                    width: 60px;
+                    border-right: 1px solid #DDD;
+                    cursor: pointer;
+                    float: left;
+                    .ipt_cycode{
+                        height: 22px;
+                        width: 30px;
+                        margin:12px 5px 0  4px;
+                        font-size: 16px;
+                        float: left;
+                        color: #808080;
+                    }
+                    i{
+                        float: left;
+                        font-size: 18px;
+                        margin-top: 12px;
+                        color: #808080;
+                    }
+    
+                }
+                .ipt_phone{
+                    // width: 233px;
+                    height: 20px;
+                    float: left;
+                    border: #ddd;
+                    margin-top: 15px;
+                    font-size: 16px;
+                    border: 0px;
+                    outline:none;
+                    cursor: pointer;
+                }
+    
+            }
+            .ver{
+                width: 298px;
+                height: 24px;
+                margin: 10px 0 0 35px;
                 font-size: 16px;
-                border: 0px;
-                outline:none;
-                cursor: pointer;
-            }
-
-        }
-        .ver{
-            width: 298px;
-            height: 24px;
-            margin: 10px 0 0 35px;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-        }
-        .ser_box{
-            width: 298px;
-            margin:  20px 0 0 35px;
-            .pointer{
-                font-size: 12px;
-            }
-            a{
-                font-size: 12px;
-                color: #4482ff;
-            }
-        }
-        .btn_box{
-            width: 298px;
-            height: 46px;
-            background: #387aff;
-            margin:15px 0 0 35px;
-            .reg_btn{
-                color: #fff;
-                font-size: 19px;
-                line-height: 46px;
-                text-align: center;
-                margin-left: 110px;
-                border: 0;
-                background: #387aff;
-
-              }
-        }
-        .reg_now{
-            width: 298px;
-            height: 20px;
-            margin:10px 0 0  35px;
-            a{
-                font-size: 18px;
-                color: #387aff;
-
-            }
-        }
-        .tab_title{
-            width:298px ;
-            height:24px ;
-            margin: 40px 0 0  35px;
-            a{
-                font-size: 18px;
                 line-height: 24px;
                 text-align: center;
-                color: #3a7cff;
-                margin-left: 82px;
+            }
+            .ser_box{
+                width: 298px;
+                margin:  20px 0 0 35px;
+                .pointer{
+                    font-size: 12px;
+                }
+                a{
+                    font-size: 12px;
+                    color: #4482ff;
+                }
+            }
+            .btn_box{
+                width: 298px;
+                height: 46px;
+                background: #387aff;
+                margin:15px 0 0 35px;
+                .reg_btn{
+                    color: #fff;
+                    font-size: 19px;
+                    line-height: 46px;
+                    text-align: center;
+                    margin-left: 110px;
+                    border: 0;
+                    background: #387aff;
+    
+                  }
+            }
+            .reg_now{
+                width: 298px;
+                height: 20px;
+                margin:10px 0 0  35px;
+                a{
+                    font-size: 18px;
+                    color: #387aff;
+    
+                }
             }
 
         }
-        .txt_box{
-            width: 298px;
-            height: 43px;
-            margin: 60px 0 0 35px;
-            font-size: 12px;
-            color: #9a9a9a;
-        }
-        .inp_box{
-            border: 1px solid #ddd;
-            position: relative;
-            width: 298px;
-            height: 48px;
-            margin: 40px 0 0 35px;
-            .password_num{
-                width: 200px;
-                height: 46px;
-                margin-left: 5px;
-                float: left;
-                border: #ddd;
-                font-size: 16px;
-                border: 0px;
-                outline:none;
-                // cursor: pointer;
+        #input_vcode{
+            .tab_title{
+                width:298px ;
+                height:24px ;
+                margin: 40px 0 0  35px;
+                a{
+                    font-size: 18px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #3a7cff;
+                    margin-left: 82px;
+                }
+    
             }
-            #pwd_btn{  
-                margin-top: 8px;
-                width: 30px;
-                height: 30px;
-                cursor: pointer;
-                margin-right: 5px;
-                float: right;
-                i{
+            .txt_box{
+                width: 298px;
+                height: 43px;
+                margin: 60px 0 0 35px;
+                font-size: 12px;
+                color: #9a9a9a;
+            }
+            .inp_box{
+                border: 1px solid #ddd;
+                position: relative;
+                width: 298px;
+                height: 48px;
+                margin: 40px 0 0 35px;
+                .password_num{
+                    width: 200px;
+                    height: 46px;
+                    margin-left: 5px;
+                    float: left;
+                    border: #ddd;
+                    font-size: 16px;
+                    border: 0px;
+                    outline:none;
+                    // cursor: pointer;
+                }
+                #pwd_btn{  
+                    margin-top: 8px;
                     width: 30px;
                     height: 30px;
-                    font-size: 22px;
-                    line-height: 30px;
-                    text-align: center;
+                    cursor: pointer;
+                    margin-right: 5px;
+                    float: right;
+                    i{
+                        width: 30px;
+                        height: 30px;
+                        font-size: 22px;
+                        line-height: 30px;
+                        text-align: center;
+                    }
                 }
             }
-        }
-        .ver{
-            width: 298px;
-            height: 24px;
-            margin: 10px 0 0 35px;
-            font-size: 16px;
-            line-height: 24px;
-            text-align: center;
-        }
-        .sub_box{
-            width: 298px;
-            height: 46px;
-            margin: 30px 0 0 35px;
-            background:#387aff;
-            .sub_btn{
-                font-size: 18px;
-                color: #fff;
-                height: 46px;
-                line-height: 46px;
+            .ver{
+                width: 298px;
+                height: 24px;
+                margin: 10px 0 0 35px;
+                font-size: 16px;
+                line-height: 24px;
                 text-align: center;
-                margin-left: 116px;
-                background: none;
-                border: none;
             }
-        }
-        .reg_now{
-            width: 298px;
-            height: 20px;
-            margin:10px 0 0  35px;
-            a{
-                font-size: 18px;
-                color: #387aff;
+            .sub_box{
+                width: 298px;
+                height: 46px;
+                margin: 30px 0 0 35px;
+                background:#387aff;
+                .sub_btn{
+                    font-size: 18px;
+                    color: #fff;
+                    height: 46px;
+                    line-height: 46px;
+                    text-align: center;
+                    margin-left: 116px;
+                    background: none;
+                    border: none;
+                }
             }
+            .reg_now{
+                width: 298px;
+                height: 20px;
+                margin:10px 0 0  35px;
+                a{
+                    font-size: 18px;
+                    color: #387aff;
+                }
+            }
+
         }
+       
+      #input_password{
         .tab_title{
             width:298px ;
             height:24px ;
@@ -281,6 +289,8 @@
                 color: #387aff;
             }
         }   
+      }
+      
     }
 }
 
