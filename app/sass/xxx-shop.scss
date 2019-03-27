@@ -384,7 +384,7 @@
     top: 35%;
     left: 38%;
     display: none;
-    background: #c8c8df;
+    background: #27b3ff;
     width: 22%;
     height: 15%;
     position: fixed;
@@ -395,12 +395,19 @@
         right: 0;
         border: 0;
         font-size: 22px;
-        background: #c8c8df;
+        background: #27b3ff;
         line-height: 22px;
     }
     p{
         font-size: 16px;
         text-align: center;
         margin-top: 40px;
+        color: #000;
+    }
+    a{
+        display: block;
+        margin-top: 10px;
+        text-align: center;
+        color: #000;
     }
 }
