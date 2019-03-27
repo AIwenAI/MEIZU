@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册——获取验证码</title>
+    <link rel="stylesheet" href="css/getVCode.css">
+    <link rel="stylesheet" href="ic_font/iconfont.css">
+    <link rel="stylesheet" href="css/common/reg_common.css">
+   
+</head>
+
+<body>
+    <div class="header">
+
+    </div>
+    <div id="ve_code">
+        <form action="" class="main_box" novalidate="novalidate">
+            <div class="tab_title">
+                <a class="reg_title">注册 Flyme 账号</a>
+            </div>
+            <div class="txt_box">
+                <span class="">验证码已发送到您的手机  请输入短信中的验证码</span>
+            </div>
+            <div class="inp_box">
+                <input type="text" class="vers"  maxlength="6" placeholder="验证码" autocomplete="off">
+                <span class="form-line"></span>
+                <input id="btnSendCode1" type="button" class="btn btn-default" value="获取验证码">
+            </div>
+            <div class="next">
+                <a class="nextStep" href="http://localhost:7777/1814/%E9%A1%B9%E7%9B%AE%E5%91%A8%E6%96%87%E4%BB%B6/MEIZU/app/inpPassword.html">下一步</a>
+            </div>
+            <div class="reg_now">
+                <a class="toLogin" href="http://localhost:7777/1814/%E9%A1%B9%E7%9B%AE%E5%91%A8%E6%96%87%E4%BB%B6/MEIZU/app/log_index.html" >登录</a>
+            </div>
+
+        </form>
+
+    </div>
+
+
+    <div class="code_footer">
+
+    </div>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="js/getVCode.js"></script>
+   <script>
+        //function调用js中的函数，在任何地方引入都可以
+        $('.header').load('reg_index.html #reg_logo');
+        $('.code_footer').load('reg_index.html #reg_footer');
+        $('.vers').on('focus',function(){
+           $('.inp_box').css({
+            borderColor:'#387aff',
+           })
+       });
+       $('.vers').on('blur',function(){
+           $('.inp_box').css({
+            borderColor:'#ddd',
+           })
+       })
+    </script>   
+    <script>
+		 getCode.init();	
+    </script>
+</body>
+
+</html>
