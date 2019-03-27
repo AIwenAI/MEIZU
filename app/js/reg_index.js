@@ -4,6 +4,7 @@ var phone = (function(){
     return {
         init(){
          this.event();
+         this.get();
 
         },
         event(){
@@ -25,6 +26,20 @@ var phone = (function(){
               $('.ver').html('');
             })
           
+      },
+      get(){
+        $('.ipt_phone').on('focus',function(){
+            $('.phone_num').css({
+             borderColor:'#387aff',
+            })
+        })
+        $('.ipt_phone').on('blur',function(){
+            $('.phone_num').css({
+             borderColor:'#ddd',
+            })
+        })
+ 
+
       } 
           }      
 }())
