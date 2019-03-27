@@ -1,0 +1,107 @@
+
+//引用公共头和尾
+@import'common/reg_common.scss';
+#reg_main{
+    position: relative;
+    height: 750px;
+    width: 100%;
+    background-image: url(../image/zhuce.png);
+    .main_box{
+        background: #fff;
+        width: 368px;
+        height: 350px;
+        position: absolute;
+        right: 85px;
+        top: 16%;
+        .tab_title{
+            width:298px ;
+            height:24px ;
+            margin: 40px 0 0  35px;
+            a{
+                font-size: 18px;
+                line-height: 24px;
+                text-align: center;
+                color: #3a7cff;
+                margin-left: 82px;
+            }
+
+        }
+        .phone_num{
+            width: 298px;
+            height: 48px ;
+            margin: 60px 0 0 35px;
+            border: 1px #ddd solid;
+            .ar_code{
+                height: 48px;
+                width: 60px;
+                border-right: 1px solid #DDD;
+                cursor: pointer;
+                float: left;
+                .ipt_cycode{
+                    height: 22px;
+                    width: 30px;
+                    margin:12px 5px 0  4px;
+                    font-size: 16px;
+                    float: left;
+                    color: #808080;
+                }
+                i{
+                    float: left;
+                    font-size: 18px;
+                    margin-top: 12px;
+                    color: #808080;
+                }
+
+            }
+            .ipt_phone{
+                // width: 233px;
+                height: 20px;
+                float: left;
+                border: #ddd;
+                margin-top: 15px;
+                font-size: 16px;
+                border: 0px;
+                outline:none;
+                cursor: pointer;
+            }
+
+        }
+        .ser_box{
+            width: 298px;
+            margin:  20px 0 0 35px;
+            .pointer{
+                font-size: 12px;
+            }
+            a{
+                font-size: 12px;
+                color: #4482ff;
+            }
+        }
+        .btn_box{
+            width: 298px;
+            height: 46px;
+            background: #387aff;
+            margin:15px 0 0 35px;
+            .reg_btn{
+                color: wheat;
+                font-size: 19px;
+                line-height: 46px;
+                text-align: center;
+                margin-left: 110px;
+              }
+        }
+        .reg_now{
+            width: 298px;
+            height: 20px;
+            margin:10px 0 0  35px;
+            a{
+                font-size: 18px;
+                color: #387aff;
+
+            }
+        }
+       
+        
+    }
+}
+
