@@ -8,15 +8,16 @@
     .main_box{
         background: #fff;
         width: 368px;
-        // height: 350px;
+        height: 350px;
         position: absolute;
         right: 85px;
         top: 16%;
         #input_phone{
+            display: block;
             .tab_title{
                 width:298px ;
                 height:24px ;
-                margin: 40px 0 0  35px;
+                margin: 20px 0 0  35px;
                 .reg_title{
                     font-size: 18px;
                     line-height: 24px;
@@ -98,7 +99,7 @@
                     margin-left: 110px;
                     border: 0;
                     background: #387aff;
-    
+                    cursor:default;
                   }
             }
             .reg_now{
@@ -114,10 +115,11 @@
 
         }
         #input_password{
+            display: none;
             .tab_title2{
                 width:298px ;
                 height:24px ;
-                margin: 40px 0 0  35px;
+                margin: 20px 0 0  35px;
                 .reg_title2{
                     font-size: 18px;
                     line-height: 24px;
@@ -168,6 +170,7 @@
                 }
             }
             .vers2{
+                opacity: 1;
                 width: 298px;
                 height: 24px;
                 margin: 10px 0 0 35px;
@@ -204,10 +207,11 @@
         }
        
        #input_vcode{
+        display: none;
         .tab_title1{
             width:298px ;
             height:24px ;
-            margin: 40px 0 0  35px;
+            margin: 20px 0 0  35px;
             .reg_title1{
                 font-size: 18px;
                 line-height: 24px;
@@ -278,6 +282,7 @@
                 line-height: 46px;
                 text-align: center;
                 margin-left: 116px;
+                cursor:default;
             }
         }
         .reg_now{

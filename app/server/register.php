@@ -6,8 +6,9 @@
     header('Access-Control-Allow-Origin:*');//允许所有来源访问
 
     header('Access-Control-Allow-Method:POST,GET');//允许访问的方式
+    $password = $_POST['password'];
     $phone = $_POST['phone'];
-    $sql = "INSERT INTO USER  ( `phone`) VALUE ('$phone')";
+    $sql = "INSERT INTO USER  (`PASSWORD`, `phone`) VALUE ('$password','$phone')";
     // 连接数据库
     $coon = new Mysqli('localhost', 'root', '', 'meizu',3306);
     // 设置字符集
@@ -17,13 +18,13 @@
     $result = $coon -> query($sql);
     if($result) {
         echo "<script>
-                alert('获取成功');
-                location.href = '../getVCode.html';
+                alert('注册成功');
+                location.href = '../log_second.html';
               </script>";
     } else {
         echo "<script>
-                alert('获取失败!');
-                location.href = '../reg_index.html';
+                alert('获取失败!注册失败!!!马上跳转到到注册页,请重新注册!!);
+                location.href = '../register.html';
             </script>";
     }
 
