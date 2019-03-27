@@ -181,11 +181,11 @@ input {
           margin: 0 auto;
           height: 35px;
           text-align: center; }
-          .header .header-xin .my .my-box dt span {
+          .header .header-xin .my .my-box dt a {
             font-size: 12px;
             line-height: 35px;
             color: #999; }
-            .header .header-xin .my .my-box dt span:hover {
+            .header .header-xin .my .my-box dt a:hover {
               color: #00bfff; }
         .header .header-xin .my .my-box dt:first-child {
           margin-top: 6px; }
@@ -385,6 +385,9 @@ body {
   background: #F4F6FA; }
 
 #header {
+  position: relative;
+  top: 0;
+  left: 0;
   background: #fff;
   height: 80px; }
   #header .head {
@@ -419,14 +422,19 @@ body {
 
 #main {
   width: 100%;
-  height: 570px; }
-  #main .content {
-    height: 570px; }
-    #main .content .gouwu {
-      margin: 10px;
-      height: 360px;
-      background: #fff; }
+  position: absolute;
+  top: 80px;
+  bottom: 246px;
+  overflow-y: auto;
+  overflow-x: hidden; }
+  #main .content .gouwu {
+    margin: 10px;
+    min-height: 360px;
+    background: #fff; }
 
 #footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   width: 100%;
   background: #fff; }

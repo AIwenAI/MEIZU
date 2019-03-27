@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 node_modules
+=======
+dist/
+node_modules/
+package-lock.json
+.vscode/
+>>>>>>> 54cefd48a3cf73cddb3e8b899758b171f8663467

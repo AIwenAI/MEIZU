@@ -181,11 +181,11 @@ input {
           margin: 0 auto;
           height: 35px;
           text-align: center; }
-          .header .header-xin .my .my-box dt span {
+          .header .header-xin .my .my-box dt a {
             font-size: 12px;
             line-height: 35px;
             color: #999; }
-            .header .header-xin .my .my-box dt span:hover {
+            .header .header-xin .my .my-box dt a:hover {
               color: #00bfff; }
         .header .header-xin .my .my-box dt:first-child {
           margin-top: 6px; }

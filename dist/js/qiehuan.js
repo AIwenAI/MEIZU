@@ -24,10 +24,11 @@ var glass = (function () {
         event: function () {
             var _this = this;
             // 利用事件委托，给每一个li添加点击事件
-            this.$ulbox.on('click', 'li',function(){
+            this.$ulbox.on('click', 'li',function(e){
                 let index = $(this).index();
                 let fIndex = $(this).closest('ul>li').index()
                 _this.showImage(index, fIndex);
+                e.preventDefault();
             })
            
             // $ul.on('click', 'li',function(){
