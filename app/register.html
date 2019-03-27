@@ -16,7 +16,7 @@
 
 <body>
     <div id="hearder">
-
+      
     </div>
     <!-- 电话 -->
     <div id="reg_main">
@@ -52,8 +52,8 @@
 
 
             <div id="input_vcode">
-                <div class="tab_title">
-                    <a class="reg_title">注册 Flyme 账号</a>
+                <div class="tab_title1">
+                    <a class="reg_title1">注册 Flyme 账号</a>
                 </div>
                 <div class="txt_box">
                     <span class="">验证码已发送到您的手机 请输入短信中的验证码</span>
@@ -72,21 +72,21 @@
             </div>
 
 
-            <div id="">
-                <div class="tab_title">
-                    <a class="reg_title">注册 Flyme 账号</a>
+            <div id="input_password">
+                <div class="tab_title2">
+                    <a class="reg_title2">注册 Flyme 账号</a>
                 </div>
-                <div class="txt_box">
+                <div class="txt_box2">
                     <span class="">密码长度为 8-16 位，至少包含字母、数字和符号中的两种类型，且不可与账号相同</span>
                 </div>
-                <div class="inp_box">
+                <div class="inp_box2">
                     <input type="password" class="password_num" maxlength="16" placeholder="密码" autocomplete="off"
                         name="password">
                     <a id="pwd_btn">
                         <i id="xianshi" class="iconfont icon-xianshimima"></i>
                     </a>
                 </div>
-                <a class="ver"></a>
+                <a class="vers2"></a>
                 <div class="sub_box">
                     <button class="sub_btn" type="submit">提交</button>
                 </div>
@@ -104,6 +104,10 @@
     <script src="js/reg_index.js"></script>
     <script src="js/inppassword.js"></script>
     <script src="js/getVCode.js"></script>
+    <script>
+        $('#header').load('reg_common.html #reg_logo');
+        $('#footer').load('reg_common.html #reg_footer');
+    </script>
     <script>
         password.init();
     </script>
