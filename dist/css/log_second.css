@@ -1,0 +1,249 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+body {
+  font-family: "微软雅黑"; }
+
+b, strong {
+  font-weight: normal; }
+
+u, a {
+  text-decoration: none; }
+
+em, i {
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 0;
+  font-style: normal; }
+
+#reg_logo {
+  height: 68px;
+  width: 100%;
+  margin: 0 auto; }
+  #reg_logo .logo_image {
+    width: 1240px;
+    height: 44px;
+    margin: 0 auto;
+    padding-top: 22px; }
+    #reg_logo .logo_image a i {
+      color: #1eb9ee; }
+
+#reg_footer {
+  width: 100%;
+  height: 131px; }
+  #reg_footer .footer_box {
+    width: 1240px;
+    height: 111px;
+    margin: 24px auto 30px;
+    background-image: url(../../image/beian_03.png);
+    background-repeat: no-repeat;
+    background-position: 10% 80%; }
+    #reg_footer .footer_box .box_lef {
+      height: 50px;
+      width: 485px;
+      float: left;
+      margin-left: 20px; }
+      #reg_footer .footer_box .box_lef ul li {
+        width: 80px;
+        font-size: 18px;
+        line-height: 50px;
+        color: #000;
+        float: left;
+        text-align: center;
+        background-image: url(../../image/tiao_03.png);
+        background-repeat: no-repeat;
+        background-position: right; }
+      #reg_footer .footer_box .box_lef ul li:last-child {
+        width: 83px;
+        background-image: none;
+        position: relative; }
+        #reg_footer .footer_box .box_lef ul li:last-child span {
+          position: absolute;
+          right: 0;
+          top: 8px; }
+        #reg_footer .footer_box .box_lef ul li:last-child a {
+          width: 80px;
+          height: 50px;
+          color: #000;
+          font-size: 18px;
+          text-align: 50px;
+          position: absolute;
+          left: 0px;
+          top: -30px;
+          display: none; }
+        #reg_footer .footer_box .box_lef ul li:last-child:hover a {
+          display: block; }
+    #reg_footer .footer_box .box_cen {
+      height: 50px;
+      width: 318px;
+      float: left;
+      margin-left: 36px;
+      font-size: 18px;
+      color: #000;
+      line-height: 50px;
+      background-image: url(../../image/talkonline.png);
+      background-repeat: no-repeat;
+      background-position: right; }
+    #reg_footer .footer_box .box_rig {
+      position: relative;
+      height: 60px;
+      width: 135px;
+      float: right;
+      margin-right: 10px; }
+      #reg_footer .footer_box .box_rig span {
+        color: #a8a8a8;
+        font-size: 32px;
+        line-height: 60px;
+        text-align: center;
+        margin-left: 7px; }
+      #reg_footer .footer_box .box_rig img {
+        display: none;
+        position: absolute;
+        top: -200px;
+        left: -23px; }
+      #reg_footer .footer_box .box_rig span:first-child:hover {
+        color: red; }
+      #reg_footer .footer_box .box_rig span:nth-of-type(3):hover {
+        color: Orange; }
+      #reg_footer .footer_box .box_rig span:nth-of-type(2):hover {
+        color: green; }
+        #reg_footer .footer_box .box_rig span:nth-of-type(2):hover img {
+          display: block; }
+
+.logS_main {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  background-image: url(../image/zhuce.png); }
+  .logS_main .logS_box {
+    overflow: hidden;
+    background: #ffffff;
+    width: 368px;
+    height: 400px;
+    position: absolute;
+    right: 85px;
+    top: 16%; }
+    .logS_main .logS_box .erwei {
+      margin: 20px 0 0 53px;
+      display: none; }
+    .logS_main .logS_box .change_win {
+      width: 35px;
+      height: 35px;
+      position: absolute;
+      top: 3px;
+      right: 3px; }
+      .logS_main .logS_box .change_win #cha_win {
+        font-size: 25px;
+        color: #ccc;
+        height: 35px;
+        line-height: 35px;
+        text-align: center;
+        margin: 0 0 3px 5px; }
+    .logS_main .logS_box .Switch {
+      width: 298px;
+      height: 24px;
+      margin: 20px 0 0  35px; }
+      .logS_main .logS_box .Switch .reg_code {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #000;
+        cursor: pointer; }
+      .logS_main .logS_box .Switch .reg_qr {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #ccc;
+        cursor: pointer; }
+        .logS_main .logS_box .Switch .reg_qr:hover {
+          color: #000; }
+      .logS_main .logS_box .Switch .register_line {
+        color: #B3ABAB;
+        display: inline-block;
+        border: 2px solid #B3ABAB;
+        border-left: 1px;
+        height: 10px;
+        line-height: 20px;
+        margin-right: 32px;
+        margin-left: 32px; }
+    .logS_main .logS_box .inpS_box {
+      width: 298px;
+      height: 48px;
+      margin: 30px 0 0 35px;
+      border: 1px #ddd solid; }
+      .logS_main .logS_box .inpS_box .ipt_account {
+        height: 20px;
+        float: left;
+        margin-top: 15px;
+        font-size: 16px;
+        border: 0px;
+        outline: none;
+        cursor: pointer; }
+    .logS_main .logS_box .ipPass_box {
+      width: 298px;
+      height: 48px;
+      margin: 20px 0 0 35px;
+      border: 1px #ddd solid; }
+      .logS_main .logS_box .ipPass_box .inp_pass {
+        height: 20px;
+        float: left;
+        margin-top: 15px;
+        font-size: 16px;
+        border: 0px;
+        outline: none;
+        cursor: pointer; }
+    .logS_main .logS_box .log_btn {
+      width: 298px;
+      height: 46px;
+      background: #387aff;
+      margin: 15px 0 0 35px; }
+      .logS_main .logS_box .log_btn .btn {
+        color: wheat;
+        font-size: 16px;
+        line-height: 46px;
+        text-align: center;
+        margin-left: 122px; }
+    .logS_main .logS_box .rememberField {
+      width: 298px;
+      height: 24px;
+      margin: 15px 0 0 35px; }
+      .logS_main .logS_box .rememberField span {
+        width: 20px;
+        height: 20px;
+        float: left;
+        margin: 3px 3px 0 3px; }
+        .logS_main .logS_box .rememberField span #remember {
+          width: 16px;
+          height: 16px; }
+      .logS_main .logS_box .rememberField .getme {
+        margin-right: 7px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #7f7f7f;
+        float: left; }
+    .logS_main .logS_box .reg_btn {
+      width: 298px;
+      height: 20px;
+      margin: 10px 0 0  35px; }
+      .logS_main .logS_box .reg_btn .toreg {
+        font-size: 14px;
+        color: #387aff;
+        float: left;
+        width: 28px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center; }
+      .logS_main .logS_box .reg_btn .forg {
+        font-size: 14px;
+        color: #387aff;
+        float: right;
+        width: 64px;
+        height: 20px;
+        line-height: 20px;
+        text-align: center; }

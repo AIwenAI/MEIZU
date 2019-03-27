@@ -1,0 +1,201 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+ul, ol, li {
+  list-style: none; }
+
+body {
+  font-family: "微软雅黑"; }
+
+b, strong {
+  font-weight: normal; }
+
+u, a {
+  text-decoration: none; }
+
+em, i {
+  font-style: normal; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 0;
+  font-style: normal; }
+
+#reg_logo {
+  height: 68px;
+  width: 100%;
+  margin: 0 auto; }
+  #reg_logo .logo_image {
+    width: 1240px;
+    height: 44px;
+    margin: 0 auto;
+    padding-top: 22px; }
+    #reg_logo .logo_image a i {
+      color: #1eb9ee; }
+
+#reg_footer {
+  width: 100%;
+  height: 131px; }
+  #reg_footer .footer_box {
+    width: 1240px;
+    height: 111px;
+    margin: 24px auto 30px;
+    background-image: url(../../image/beian_03.png);
+    background-repeat: no-repeat;
+    background-position: 10% 80%; }
+    #reg_footer .footer_box .box_lef {
+      height: 50px;
+      width: 485px;
+      float: left;
+      margin-left: 20px; }
+      #reg_footer .footer_box .box_lef ul li {
+        width: 80px;
+        font-size: 18px;
+        line-height: 50px;
+        color: #000;
+        float: left;
+        text-align: center;
+        background-image: url(../../image/tiao_03.png);
+        background-repeat: no-repeat;
+        background-position: right; }
+      #reg_footer .footer_box .box_lef ul li:last-child {
+        width: 83px;
+        background-image: none;
+        position: relative; }
+        #reg_footer .footer_box .box_lef ul li:last-child span {
+          position: absolute;
+          right: 0;
+          top: 8px; }
+        #reg_footer .footer_box .box_lef ul li:last-child a {
+          width: 80px;
+          height: 50px;
+          color: #000;
+          font-size: 18px;
+          text-align: 50px;
+          position: absolute;
+          left: 0px;
+          top: -30px;
+          display: none; }
+        #reg_footer .footer_box .box_lef ul li:last-child:hover a {
+          display: block; }
+    #reg_footer .footer_box .box_cen {
+      height: 50px;
+      width: 318px;
+      float: left;
+      margin-left: 36px;
+      font-size: 18px;
+      color: #000;
+      line-height: 50px;
+      background-image: url(../../image/talkonline.png);
+      background-repeat: no-repeat;
+      background-position: right; }
+    #reg_footer .footer_box .box_rig {
+      position: relative;
+      height: 60px;
+      width: 135px;
+      float: right;
+      margin-right: 10px; }
+      #reg_footer .footer_box .box_rig span {
+        color: #a8a8a8;
+        font-size: 32px;
+        line-height: 60px;
+        text-align: center;
+        margin-left: 7px; }
+      #reg_footer .footer_box .box_rig img {
+        display: none;
+        position: absolute;
+        top: -200px;
+        left: -23px; }
+      #reg_footer .footer_box .box_rig span:first-child:hover {
+        color: red; }
+      #reg_footer .footer_box .box_rig span:nth-of-type(3):hover {
+        color: Orange; }
+      #reg_footer .footer_box .box_rig span:nth-of-type(2):hover {
+        color: green; }
+        #reg_footer .footer_box .box_rig span:nth-of-type(2):hover img {
+          display: block; }
+
+#ve_code {
+  position: relative;
+  height: 750px;
+  width: 100%;
+  background-image: url(../image/zhuce.png); }
+  #ve_code .main_box {
+    background: #fff;
+    width: 368px;
+    height: 400px;
+    position: absolute;
+    right: 85px;
+    top: 16%; }
+    #ve_code .main_box .tab_title {
+      width: 298px;
+      height: 24px;
+      margin: 40px 0 0  35px; }
+      #ve_code .main_box .tab_title a {
+        font-size: 18px;
+        line-height: 24px;
+        text-align: center;
+        color: #3a7cff;
+        margin-left: 82px; }
+    #ve_code .main_box .txt_box {
+      width: 298px;
+      height: 43px;
+      margin: 60px 0 0 35px;
+      font-size: 12px;
+      color: #9a9a9a; }
+      #ve_code .main_box .txt_box #phoneNum {
+        color: #3a7cff; }
+    #ve_code .main_box .inp_box {
+      border: 1px solid #ddd;
+      position: relative;
+      width: 298px;
+      height: 48px;
+      margin: 40px 0 0 35px; }
+      #ve_code .main_box .inp_box .vers {
+        width: 100px;
+        height: 46px;
+        margin-left: 5px;
+        float: left;
+        border: #ddd;
+        font-size: 16px;
+        border: 0px;
+        outline: none;
+        cursor: pointer; }
+      #ve_code .main_box .inp_box .form-line {
+        color: #d9d9d9;
+        height: 40px;
+        display: inline-block;
+        border-left: 1px solid #dadada;
+        position: absolute;
+        right: 140px;
+        top: 5px; }
+      #ve_code .main_box .inp_box #btnSendCode1 {
+        height: 48px;
+        float: right;
+        line-height: 46px;
+        text-align: center;
+        color: #3a7cff;
+        font-size: 16px;
+        background: #fff;
+        border: none;
+        margin-right: 20px; }
+    #ve_code .main_box .next {
+      width: 298px;
+      height: 46px;
+      margin: 30px 0 0 35px;
+      background: #387aff; }
+      #ve_code .main_box .next a {
+        font-size: 18px;
+        color: #fff;
+        height: 46px;
+        line-height: 46px;
+        text-align: center;
+        margin-left: 116px; }
+    #ve_code .main_box .reg_now {
+      width: 298px;
+      height: 20px;
+      margin: 10px 0 0  35px; }
+      #ve_code .main_box .reg_now a {
+        font-size: 18px;
+        color: #387aff; }
