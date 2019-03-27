@@ -141,10 +141,13 @@ var add = (function() {
     $(".addcar").click(function(){
         $(".succes-add-car").fadeTo(300,1);
         $("body").css({ "overflow": "hidden" });
-        localStorage.setItem('手机名', $("#model").children(".on").html());
-        localStorage.setItem('网络类型', $("#type").children(".on").html());
-        localStorage.setItem('颜色', $("#color").children(".on").html());
-        localStorage.setItem('内存', $("#memory").children(".on").html());
+        localStorage.setItem = [];
+        var obj = {}
+        obj.name = $("#model").children(".on").html();
+        obj.type = $("#type").children(".on").html();
+        obj.color = $("#color").children(".on").html();
+        obj.memory = $("#memory").children(".on").html();
+        localStorage.setItem.push(obj);
     });
     $(".bg-model-ok").click(function(){
         $(".succes-add-car").hide();

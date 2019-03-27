@@ -18,7 +18,7 @@
     <div class="logS_main">
         <form method="POST" action="server/login.php" class="logS_box" novalidate="novalidate">
             <div class="change_win">
-                <a id="cha_win" class="iconfont icon-shouji" href="http://localhost:7777/1814/%E9%A1%B9%E7%9B%AE%E5%91%A8%E6%96%87%E4%BB%B6/MEIZU/app/log_index.html"></a>
+                <a id="cha_win" class="iconfont icon-shouji" href="log_index.html"></a>
             </div>
             <div class="Switch">
                 <a class="reg_code">账号登录</a>
@@ -29,12 +29,13 @@
                 <img src="image/二维码_03.png" alt="">
             </div>
             <div class="inpS_box">
-                    <input class="ipt_account" name="phone"  maxlength="50" placeholder="手机号/ Flyme 账号" autocomplete="off">
+                <input class="ipt_account" name="phone"  maxlength="50" placeholder="手机号/ Flyme 账号" autocomplete="off">
             </div>
+            <a class="vers"></a>
             <div class="ipPass_box ">
                     <input type="password" class="inp_pass" placeholder="密码" name="password"  maxlength="16" autocomplete="off">
-            
             </div>
+            <a class="pas_ver"></a>
             <div class="log_btn">
                 <span class="btn" data-step="1">登录</span>
             </div>
@@ -46,7 +47,7 @@
             </div>
             <div class="reg_btn">
                 <a class="toreg"
-                    href="http://localhost:7777/1814/%E9%A1%B9%E7%9B%AE%E5%91%A8%E6%96%87%E4%BB%B6/MEIZU/app/reg_index.html">注册</a>
+                    href="reg_index.html">注册</a>
                 <a class="forg" href="https://i.flyme.cn/forgetpwd">忘记密码?</a>
             </div>
 
@@ -60,50 +61,9 @@
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
     <script src="js/ajax3.0.0.js"></script>
     <script src="js/login.js"></script>
+    
     <script>
-        //function调用js中的函数，在任何地方引入都可以
-        $('.logS_header').load('reg_index.html #reg_logo');
-        $('.logS_footer').load('reg_index.html #reg_footer');
-        $('.ipt_account').on('focus',function(){
-            $('.inpS_box').css({
-                borderColor:'#387aff',
-            })
-        })
-        $('.ipt_account').on('blur',function(){
-            $('.inpS_box').css({
-                borderColor:'#ddd',
-            })
-        })
-        $('.inp_pass').on('focus',function(){
-            $('.ipPass_box').css({
-                borderColor:'#387aff',
-            })
-        })
-        $('.inp_pass').on('blur',function(){
-            $('.ipPass_box').css({
-                borderColor:'#ddd',
-            })
-        })
-        $('.reg_qr').on('click',function(){
-            $('.erwei').css({
-                display:'block',
-            });
-            $('.reg_code').css({
-                color:'#ddd',
-            })
-        })
-        $('.reg_code').on('click',function(){
-            $('.erwei').css({
-                display:'none',
-            })
-            $('.reg_code').css({
-                color:'#000',
-            })
-        })
-       
-    </script>
-    <script>
-            login.init();
+            logSecond.init();
     </script>
    
 </body>
