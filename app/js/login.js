@@ -1,11 +1,10 @@
 
-var  regs = (function(){
+var regs= (function(){
     return{
         init(){
             this.event();
-
         },
-        event(){
+        event(){      
             const self = this;
             //点击登录按钮跳转到首页
             $('.btn').on('click',function(){
@@ -38,4 +37,4 @@ var  regs = (function(){
         },
 
         }
-})
+}())
