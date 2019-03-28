@@ -6,8 +6,8 @@ var  logSecond = (function(){
             this.event();
             this.passreg();
             this.get();
-        $('.logS_header').load('reg_index.html #reg_logo');
-        $('.logS_footer').load('reg_index.html #reg_footer');
+        $('.logS_header').load('reg_common.html #reg_logo');
+        $('.logS_footer').load('reg_common.html #reg_footer');
 
         },
         event(){
@@ -26,6 +26,9 @@ var  logSecond = (function(){
                         }
               })
               $(".ipt_account").on('focus',function(){
+                  $('.ipt_account').css({
+                    inputPlaceholderColor:'#b8c4ce'
+                  })
                 $('.vers').html('');
               })
         },

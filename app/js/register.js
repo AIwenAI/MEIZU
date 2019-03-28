@@ -169,7 +169,7 @@ var regR = (function () {
                     phone:$('.ipt_phone').val(),
                     password:$('.password_num').val()
                 }
-                sendAjax('http://localhost:7777/server/register.php',{
+                sendAjax('http://10.36.145.51:7777/server/register.php',{
                     method:'POST',
                     data:obj
                 })

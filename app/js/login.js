@@ -21,7 +21,7 @@ var regs= (function(){
                     phone:$('.ipt_account').val(),
                     password:$('.inp_pass').val()
                 }
-                sendAjax('http://localhost:7777/server/login.php',{
+                sendAjax('http://10.36.145.51:7777/server/login.php',{
                     method:'POST',
                     data:obj,
                 })
