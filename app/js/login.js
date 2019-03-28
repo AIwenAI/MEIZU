@@ -26,9 +26,10 @@ var regs= (function(){
                     data:obj,
                 })
                 .then(data => {
-                    localStorage.name = $('.inp1').val();
-                    document.cookie = `user=${$('.inp1').val()}`;
-                    // location.href = 'index.html';
+                    // localStorage.name = $('.inp1').val();
+                    document.cookie = `name=${$('.ipt_account').val()}`;
+                    location.href = 'index.html';
+                    // console.log($('.ipt_account').val());
                 })
                 .catch(data =>{
                     alert(data.msg);
