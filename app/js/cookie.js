@@ -1,8 +1,6 @@
 // 获取cookie
 var cook = (function () {
-    return {
-        init() {
-            let str = document.cookie;
+    let str = document.cookie;
             console.log(str);
             var arr = str.split('; ');
             var obj = {};
@@ -12,6 +10,9 @@ var cook = (function () {
                 
                 obj[_arr[0]] = _arr[1];
             })
+    return {
+        init() {
+            
             // console.log(obj);
             if (document.cookie) {
                 $('.my-box').html(`<dt><a href="">个人中心</a></dt>
@@ -32,14 +33,18 @@ var cook = (function () {
         },
         event(){
             if (document.cookie) {
+                $('.ul_right').html(`<li><a href="">我的订单</a></li>
+                <li><a href="index.html">用户${obj.name}</a> 的商城</li>`); 
+                console.log(1);
+                
                 if(!localStorage.shopList || localStorage.shopList == '[]'){
-                    console.log(1);
                     $('.gouwu').html(`
+                    <div class='qw'>
                     <img src="img/gwc2.png">
                     <ul class="aa">
                         <li><p>购物车内还没有商品，赶紧去选购吧~~~</p></li>
                         <li><a href="index.html">返回商城首页</a></li>
-                    </ul>`);
+                    </ul></div>`);
                 }
             }
         }
