@@ -3,7 +3,7 @@ var regR = (function () {
        InterValObj1, //timer变量，控制时间
       curCount1,
       passwordeg = /^\w{6,18}$/;   //密码的正则表达式
-    var phoneg = /(^1[3|4|5|7|8]\d{9}$)|(^09\d{8}$)/;   //密码的正则表达式
+    var phoneg = /(^1[3|4|5|7|8]\d{9}$)|(^09\d{8}$)/; //密码的正则表达式
     return {
         init() {
             this.event();
@@ -53,7 +53,16 @@ var regR = (function () {
         },
         steTime() {//设置获取验证码的倒计时
             $("#btnSendCode1").on('click', function () {
-                curCount1 = count;
+               
+                $('.vers').html( function yzm(){
+                    var arr = ['0','1','2','3','4','5','6','7','8','9'];
+                    var str = '';
+                    for(var i = 0 ; i < 6 ; i ++ )
+                        str += ''+arr[Math.floor(Math.random() * arr.length)];
+                    return str;
+                 });
+               
+                 curCount1 = count;
                 $("#btnSendCode1").css({
                     color: '#8e8e8e',
                 });
@@ -77,9 +86,11 @@ var regR = (function () {
                     }
                 }
             });
+            
         },
         code_change(){//输入验证码改变输入框的样式
             $('.vers').on('focus',function(){
+               
                 $('.inp_box').css({
                  borderColor:'#387aff',
                 })
@@ -88,7 +99,7 @@ var regR = (function () {
                 $('.inp_box').css({
                  borderColor:'#ddd',
                 })
-            })
+            })   
         },
         pass_change(){//密码输入验证正则表达式且改变输入框样式
             $(".password_num").on('blur',function () {
