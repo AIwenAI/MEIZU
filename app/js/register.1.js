@@ -1,17 +1,4 @@
 var check = {
-    email(val) {
-        const reg = /^\w+@\w+\.\w+$/;
-        return reg.test(val);
-    },
-    username(val) {
-        const reg = /^\w{6,13}$/;
-        return reg.test(val);
-
-    },
-    name(val) {
-        const reg = /^[\u4e00-\u9fa5]{2,5}$/;
-        return reg.test(val);
-    },
     password(val) {
         const reg = /^\w{6,18}$/;
         return reg.test(val);
