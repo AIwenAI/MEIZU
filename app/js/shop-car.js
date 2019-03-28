@@ -31,14 +31,28 @@ var table = (function(){
                 shopData = data
                 data.forEach(x => {
                     let html = `
-                    <div>
-                        商品名称: <span>${x.name}</span><br />
-                        商品数量: <input type="number" value="${x.count}"><br />
-                        商品价格: <span>${x.price}</span><br />
-                        商品总价: <span>${x.count * x.price}</span><br />
-                        商品提示: <span>${x.ps}</span><br />
-                        <button>删除</button>
-                    </div>`
+                    
+    <div id="show_car">
+        <span class="addprice">加购价</span>
+        <span class="content">另外再加19元起，即可换购超值商品</span>
+        <span class="nowBuy">立即加购></span>
+        <div class="show_wrap">
+            <div class="inp">
+                <input type="checkbox" name="check" id="check">
+            </div>
+            <span class="bgsp"></span>
+            <div class="details">
+                <span id="phoneName">${x.name}</span><br>
+                <span id="phoneNet" class="desp">${x.type} </span><span id="phoneColor" class="desp">${x.color} </span><span id="phoneMempry" class="desp">${x.memory} </span>
+            </div>
+            <span class="pricesp">￥<span id="phonePrice">${x.count * x.price}</span></span>
+            <div class="add">
+                <input type="number" value="${x.count}">
+            </div>
+          <span class="xiaoji">${x.price}</span>
+            <span class="bianji" id="bianji">--</span>
+    </div>
+   `
                     $box.append(html)
                 })
             },
