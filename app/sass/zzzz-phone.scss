@@ -45,6 +45,11 @@
     li:hover  .box .img-box li{
         opacity: 1;
     }
+    ul>li:hover{  
+           -webkit-box-shadow:0 0 20px rgba(8, 14, 14, 0.5);  
+            -moz-box-shadow:0 0 20px rgba(8, 14, 14, 0.5); 
+            box-shadow:0 0 20px rgba(8, 14, 14, 0.5);  
+        }  
     li{
         width: 402px;
         height: 555px;
