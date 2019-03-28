@@ -23,7 +23,7 @@ var regs= (function(){
                 }
                 sendAjax('http://localhost:7777/server/login.php',{
                     method:'POST',
-                    data:obj
+                    data:obj,
                 })
                 .then(data => {
                     localStorage.name = $('.inp1').val();
