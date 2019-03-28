@@ -97,6 +97,11 @@ var table = (function(){
                         $('#all').prop('checked',true)
                     }
                 })
+                $('.details').on('click',function(){
+                    location.href = 'xxx-shop.html';
+                    console.log(1);
+                    
+                })
             },
             getData() {
                 let data = localStorage.shopList || '[]'

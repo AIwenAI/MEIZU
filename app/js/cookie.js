@@ -1,12 +1,10 @@
 // 获取cookie
 var cook = (function () {
     let str = document.cookie;
-            console.log(str);
             var arr = str.split('; ');
             var obj = {};
             arr.forEach(x => {
                 var _arr = x.split('=');
-                console.log(_arr);
                 
                 obj[_arr[0]] = _arr[1];
             })
@@ -19,9 +17,6 @@ var cook = (function () {
                 <dt><a href="../register.html">我的订单</a></dt>
                 <dt><a href="">M码通道</a></dt>
                 <dt><a href="javascript:void(0);" class="tuichu">退出登录</a></dt>`);
-                //  console.log($('.header-xin.my'));
-                //    $('.username').text(obj.user);
-                //    $('.out').css({'display':'block'});
             }
             $('.tuichu').on('click',function(){
                 // $('.my-box').css({'display':'none'});
@@ -34,9 +29,7 @@ var cook = (function () {
         event(){
             if (document.cookie) {
                 $('.ul_right').html(`<li><a href="">我的订单</a></li>
-                <li><a href="index.html">用户${obj.name}</a> 的商城</li>`); 
-                console.log(1);
-                
+                <li><a href="index.html" class="username">用户<em>${obj.name}</em> 的商城</a></li>`); 
                 if(!localStorage.shopList || localStorage.shopList == '[]'){
                     $('.gouwu').html(`
                     <div class='qw'>
