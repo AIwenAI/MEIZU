@@ -13,7 +13,7 @@ var regR = (function () {
             this.CPassW();
             this.code_change();
             this.showPage();
-            this.send();
+            // this.send();
             $('#hearder').load('reg_common.html #reg_logo');
            $('#footer').load('reg_common.html #reg_footer'); 
 
@@ -135,7 +135,7 @@ var regR = (function () {
                 opactiy:'0',
             })
         })
-        $('.password_num').on('blur',function(){
+        $('.password_num').on('dblclick',function(){
          $('.password_num').attr("type","password") ;
          $('#xianshi').attr("class","iconfont icon-xianshimima");
         })
@@ -163,24 +163,24 @@ var regR = (function () {
               })
            })
         },
-        send(){//发送注册数据
-            $('.sub_btn').on('click',function(){
-                var obj = {
-                    phone:$('.ipt_phone').val(),
-                    password:$('.password_num').val()
-                }
-                sendAjax('http://10.36.145.51:7777/server/register.php',{
-                    method:'POST',
-                    data:obj
-                })
-                .then(data => {
-                    location.href = 'log_second.html';
-                })
-                .catch(data => {
-                    alert(data.msg);
-                })
-            })
-        },
+        // send(){//发送注册数据
+        //     $('.sub_btn').on('click',function(){
+        //         var obj = {
+        //             phone:$('.ipt_phone').val(),
+        //             password:$('.password_num').val()
+        //         }
+        //         sendAjax('http://10.36.145.51:7777/server/register.php',{
+        //             method:'POST',
+        //             data:obj
+        //         })
+        //         .then(data => {
+        //             location.href = 'log_second.html';
+        //         })
+        //         .catch(data => {
+        //             alert(data.msg);
+        //         })
+        //     })
+        // },
 
         } 
 }())

@@ -22,7 +22,7 @@ var  logSecond = (function(){
                             $('.vers').css({
                                 color:'red',
                             })
-                            $('.vers').html('格式错误，请输入正确的手机号');
+                            $('.vers').html('请输入正确的手机号');
                         }
               })
               $(".ipt_account").on('focus',function(){
@@ -44,7 +44,7 @@ var  logSecond = (function(){
                             $('.pas_ver').css({
                                 color:'red',
                             })
-                            $('.pas_ver').html('格式错误，请输入正确的密码');
+                            $('.pas_ver').html('请输入正确的密码');
                         }
               })
               $(".inp_pass").on('focus',function(){

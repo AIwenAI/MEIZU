@@ -86,22 +86,20 @@
                     color: #4482ff;
                 }
             }
-            .btn_box{
+            
+            .Btnn{
                 width: 298px;
                 height: 46px;
-                background: #387aff;
                 margin:15px 0 0 35px;
-                .Btnn{
-                    color: #fff;
-                    font-size: 19px;
-                    line-height: 46px;
-                    text-align: center;
-                    margin-left: 110px;
-                    border: 0;
-                    background: #387aff;
-                    cursor:default;
-                  }
-            }
+                color: #fff;
+                font-size: 18px;
+                line-height: 46px;
+                text-align: center;
+                border: 0;
+                background: #387aff;
+                
+                }
+           
             .reg_now{
                 width: 298px;
                 height: 20px;
@@ -271,21 +269,16 @@
                 border: none;
                 margin-right: 20px;
             }
-        }
-        .next{
+        } 
+        .nextStep{
             width: 298px;
             height: 46px;
             margin: 30px 0 0 35px;
             background:#387aff;
-            .nextStep{
-                font-size: 18px;
-                color: #fff;
-                height: 46px;
-                line-height: 46px;
-                text-align: center;
-                margin-left: 116px;
-                cursor:default;
-            }
+            font-size: 18px;
+            color: #fff;
+            line-height: 46px;
+            text-align: center;
         }
         .reg_now{
             width: 298px;

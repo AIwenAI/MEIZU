@@ -16,7 +16,7 @@
 
     </div>
     <div class="logS_main">
-        <form method="POST" action="http://localhost:7777/server/login.php" class="logS_box" novalidate="novalidate">
+        <form class="logS_box" novalidate="novalidate" onsubmit="return false">
             <div class="change_win">
                 <a id="cha_win" class="iconfont icon-shouji" href="log_index.html"></a>
             </div>
@@ -29,21 +29,23 @@
                 <img src="image/二维码_03.png" alt="">
             </div>
             <div class="inpS_box">
-                <input class="ipt_account" name="phone"  maxlength="50" placeholder="手机号/ Flyme 账号" autocomplete="off">
+                <input class="ipt_account" name="phone" maxlength="11" placeholder="手机号/ Flyme 账号" autocomplete="off">
             </div>
             <a class="vers"></a>
             <div class="ipPass_box ">
-                    <input type="password" class="inp_pass" placeholder="密码" name="password"  maxlength="16" autocomplete="off">
+                <input type="password" class="inp_pass" placeholder="密码" name="password" maxlength="16"
+                    autocomplete="off">
             </div>
             <a class="pas_ver"></a>
-            <div class="log_btn">
+            <div class="Su_btn">
                 <button class="btn" type="submit">登录</button>
             </div>
+
             <div class="rememberField">
                 <span>
-                    <input name="remember" id="remember" type="checkbox" value="1" >
+                    <input name="remember" id="remember" type="checkbox" value="1">
                 </span>
-                 <label for="remember" tabindex="0" class="getme">记住登录状态</label>
+                <label for="remember" tabindex="0" class="getme">记住登录状态</label>
             </div>
             <div class="reg_btn">
                 <a class="toreg" href="register.html">注册</a>
@@ -62,12 +64,12 @@
     <script src="js/login.js"></script>
     <script src="js/log_second.js"></script>
     <script>
-       logSecond.init();
+        logSecond.init();
     </script>
     <script>
-      regs.init();
+        regs.init();
     </script>
-   
+
 </body>
 
 </html>
