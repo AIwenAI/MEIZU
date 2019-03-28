@@ -53,24 +53,73 @@
         height: 100%;
         float: left;
         .box{
+            // .show-image{
+            //     img{
+            //         width: 550px;
+            //         height: 550px;
+            //     }
+            // }
+            // .img-box {
+            //     margin-left: 50px;
+            //     margin-top: 20px;
+            //     li{
+            //         display: inline-block;
+            //         margin-right: 35px;
+            //         img{
+            //             width: 80px;
+            //             height: 80px;
+            //         }
+            //     }
+            // }
             .show-image{
+                position: relative;
+                width: 550px;
+                font-size: 0;
+                overflow: hidden;
                 img{
-                    width: 550px;
-                    height: 550px;
+                    max-width: 550px;
+                    max-height: 550px;
                 }
+                .filter {
+                    position: absolute;
+                    left: 0px;
+                    top: 0;
+                    width: 100px;
+                    height: 100px;
+                    background: rgba(0, 0, 0, 0.6);
+                    cursor: move;
+                    display: none;
+                  }
             }
+            .show-big-image {
+                position: absolute;
+                left: 820px;
+                top: 200px;
+                width: 450px;
+                height: 450px;
+                overflow: hidden;
+                border: 1px solid #eee;
+                display: none;
+                z-index: 9999;
+                img{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 1600px;
+                }
+              }
             .img-box {
-                margin-left: 50px;
-                margin-top: 20px;
-                li{
-                    display: inline-block;
-                    margin-right: 35px;
-                    img{
-                        width: 80px;
-                        height: 80px;
-                    }
+                    li{
+                        display: inline-block;
+                        border: 1px solid transparent;
+                        margin-left: 10px;
+                        img{
+                            max-width: 100%;
+                            max-height: 100%;
+                        }
                 }
             }
+   
         }
         dl{
             float: left;

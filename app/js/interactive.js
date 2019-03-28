@@ -4,7 +4,8 @@ var inter = (function(){
         init(){
             $box = $('.header');
             $minBox = $box.children('header');
-            $('.count').html(JSON.parse(localStorage.shopList).length - 0);
+            var data = localStorage.shopList || '[]'
+            $('.count').html(JSON.parse(data).length);
             $minBoxZ = $minBox.children('.header-xin')
             $nav = $minBoxZ.children('.nav');
             $liAll = $nav.children('li');

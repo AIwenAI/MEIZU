@@ -132,7 +132,7 @@ var regR = (function () {
         },
         showPage(){//点击按钮，切换不同的页面
             //点击立即注册，页面切换为输入验证码的页面
-             $('.reg_btn').on('click',function(){
+             $('.Btnn').on('click',function(){
                   $('#input_phone').css({
                       display:'none'
                   });
@@ -163,7 +163,7 @@ var regR = (function () {
                     data:obj
                 })
                 .then(data => {
-                    location.href = 'log_second.html';
+                    location.href = 'http://localhost:3333/server/log_second.html';
                 })
                 .catch(data => {
                     alert(data.msg);

@@ -9,13 +9,9 @@ var search = (function () {
         },
         event() {
             const self = this;
-            $inp.on('focus', function () {
-                self.show();
-                self.getData($inp.attr('placeholder'));
-                $box.animate({
-                    'height': $box.height() + $ulbox.height() + 'px'
-                })
-            })
+            // $inp.on('focus', function () {
+            //     self.show();
+            // })
             $inp.on('input', function () {
                 if ($inp.val() == "") {
                     self.getData($inp.attr('placeholder'));
@@ -28,8 +24,8 @@ var search = (function () {
             $inp.on('click', function (e) {
                 e.stopPropagation();
                 if ($inp.val() == "") {
-                    self.getData($inp.attr('placeholder'));
-                    self.show();
+                    // self.getData($inp.attr('placeholder'));
+                    self.hide();
                 } else {
                     self.getData($inp.val());
                     self.show();
@@ -43,8 +39,20 @@ var search = (function () {
             })
             $ulbox.on('click', 'li', function () {
                 $inp.val($(this).html());
-                self.getData($inp.val());
                 self.hide();
+            })
+            $('.icon-sousuo').on('click',function(e){
+                if($inp.val() == ""){
+                    e.preventDefault ? e.preventDefault(): e.returnValue = false;
+                }
+            })
+            $inp.on('keydown', function(e){
+                const keyCode = e.keyCode || e.which;
+                if($inp.val() == ""){
+                    if(keyCode == 13){
+                        e.preventDefault ? e.preventDefault(): e.returnValue = false;
+                    }
+                }
             })
         },
         getData(val) {
