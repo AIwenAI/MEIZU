@@ -31,8 +31,11 @@ var sendAjax = function(url,options){
                 if(xhr.status == 200){
                     if(__DEFAULT.dataType === 'json'){
                         data = JSON.parse(data);
+                    } if(data.code == 200){
+                        res(data);
+                    }else{
+                        rej(data);
                     }
-                    res(data);
                 }else{
                     rej(data);
                 }

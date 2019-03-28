@@ -17,19 +17,20 @@ var  logSecond = (function(){
                     $('.vers').css({
                         color:'#387aff',
                     })
-                    $('.vers').html('输入正确');
-                        }else{
-                            $('.vers').css({
-                                color:'red',
-                            })
-                            $('.vers').html('请输入正确的手机号');
+                    // $('.vers').html('输入正确');
                         }
+                        // else{
+                        //     $('.vers').css({
+                        //         color:'red',
+                        //     })
+                        //     $('.vers').html('请输入正确的手机号');
+                        // }
               })
               $(".ipt_account").on('focus',function(){
                   $('.ipt_account').css({
                     inputPlaceholderColor:'#b8c4ce'
                   })
-                $('.vers').html('');
+                // $('.vers').html('');
               })
         },
         passreg(){
@@ -39,16 +40,17 @@ var  logSecond = (function(){
                     $('.pas_ver').css({
                         color:'#387aff',
                     })
-                    $('.pas_ver').html('验证成功');
-                        }else{
-                            $('.pas_ver').css({
-                                color:'red',
-                            })
-                            $('.pas_ver').html('请输入正确的密码');
+                    // $('.pas_ver').html('验证成功');
                         }
+                        // else{
+                        //     $('.pas_ver').css({
+                        //         color:'red',
+                        //     })
+                        //     $('.pas_ver').html('请输入正确的密码');
+                        // }
               })
               $(".inp_pass").on('focus',function(){
-                $('.pas_ver').html('');
+                // $('.pas_ver').html('');
               })
         },
         get(){
