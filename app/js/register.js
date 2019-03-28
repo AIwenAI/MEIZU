@@ -174,7 +174,7 @@ var regR = (function () {
                     data:obj
                 })
                 .then(data => {
-                    location.href = 'http://localhost:3333/server/log_second.html';
+                    location.href = 'http://localhost:3333/log_second.html';
                 })
                 .catch(data => {
                     alert(data.msg);
