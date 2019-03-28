@@ -141,9 +141,9 @@ var regR = (function () {
                 })
              });
              $('.nextStep').on('click',function(){
-                $('#input_phone').css({
-                    display:'none'
-                });
+                // $('#input_phone').css({
+                //     display:'none'
+                // });
                 $('#input_vcode').css({
                     display:'none'
                 })
