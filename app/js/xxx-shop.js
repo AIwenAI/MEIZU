@@ -172,6 +172,7 @@ var shop_car = (function(){
                 obj.color = $("#color").children(".on").html();
                 obj.memory = $("#memory").children(".on").html();
                 obj.count = $('.span-num').html() - 0;
+                obj.price = 3198;
                 shopData = obj;
                 // 获取点击按钮的索引
                 // var index = self.index('.shop-btn-car');

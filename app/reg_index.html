@@ -23,7 +23,7 @@
     </div>
     <!-- main -->
     <div id="reg_main">
-        <form method="POST" action="server/register.php" class="main_box" novalidate="novalidate" >
+        <form class="main_box" novalidate="novalidate" onsubmit="return false">
             <div class="tab_title">
                 <a class="reg_title">注册 Flyme 账号</a>
             </div>
@@ -86,7 +86,9 @@
     </div>
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"> </script>
     <script src="js/reg_index.js"></script>
+    <script src="js/ajax3.0.0.js"></script>
     <script>
+        sendAjax()
       phone.init();
     </script>
 </body>
